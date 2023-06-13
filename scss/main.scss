@@ -1,0 +1,401 @@
+@import "colors";
+@import "reset";
+@import url('https://fonts.cdnfonts.com/css/canela-text-trial');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.header {
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    align-items: center;
+
+    .menu__list {
+        display: flex;
+        align-items: center;
+        .menu__item {
+            padding-right: 20px;
+            list-style-type: none;
+            padding-right: 40px;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 16px;
+            .menu__link {
+                text-decoration: none;
+                color: #808080;
+                
+            }
+            .menu__link_active {
+                color: black;
+            }
+        }
+    }
+}
+.btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .btn__primary {
+        border: none;
+        outline: none;
+        padding: 12px 40px;
+        font-family: 'Inter';
+        background-color: $bgyellow;
+        color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
+
+
+
+.intro-left {
+    margin-top: 118px;
+    padding: 0;
+    .intro__tittle {
+        font-weight: 500;
+        font-size: 55px;
+        line-height: 76.8px;
+        margin-bottom: 40px;
+
+        .intro__tittle-span {
+            color: $yellow;
+        }
+    }
+    .intro__text {
+        width: 544px;
+        color: black;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 40px;
+        line-height: 25px;
+        p {
+            font-family: 'Inter';
+        }
+    }
+    .intro__btns {
+        margin-bottom: 72px;
+        .intro__btns-first {
+            border: none;
+            outline: none;
+            padding: 12px 40px;
+            font-family: 'Inter';
+            background-color: $bgyellow;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .intro__btns-second {
+            border: none;
+            outline: none;
+            padding: 12px 20px;
+            font-family: 'Inter';
+            background-color: transparent;
+            color: #000;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
+.intro__stats {
+    display: flex;
+    flex-direction: 1fr 1fr 1fr;
+    justify-content: space-around;
+    margin-bottom: 118px;
+
+    .intro__stats-item {
+        border-right: 1px solid $yellow;
+        padding-right: 20px;
+        h2 {
+            font-weight: 500;
+            font-size: 48px;
+            color: #000;
+        }
+        p {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .intro__stats-span {
+            color: $yellow;
+        }
+    }
+    .intro__stats-item:last-child {
+        border-right: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+
+.intro-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 92px;
+    position: relative;
+    .intro__card {
+        width: 304px;
+        height: 169px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: #131E3A;
+        border-top: 5px solid #D6EF0E;
+        box-shadow: 0px 9px 50px rgba(23, 36, 65, 0.04);
+        border-radius: 16px;
+        position: absolute;
+        top: 85%;
+        right: 0;
+        .intro__card-general {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 104px;
+            .intro__card-left {
+                font-weight: 400;
+                font-size: 16px;
+                font-family: 'Inter';
+                color: $yellow;
+                p {
+                    color: #fff;
+                }
+            }
+            .intro__card-right {
+                font-weight: 400;
+                font-size: 16px;
+                font-family: 'Inter';
+                color: $yellow;
+                p {
+                    color: #fff;
+                }
+            }
+        }
+        .intro__card-btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .btn-card {
+                border: 1px solid $yellow;
+                border-radius: 8px;
+                padding: 12px 40px;
+                font-weight: 700;
+                font-size: 16px;
+                font-family: 'Inter';
+                color: $yellow;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+
+.headerArtSection {
+    height: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerArt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    .headerArt__tittle {
+        height: 116px;
+        display: flex;
+        flex-direction: row;
+        h2 {
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 57px;
+        }
+        .headerArt__tittle-span {
+            color: $yellow;
+        }
+    }
+    .btn__header__art {
+            border: none;
+            outline: none;
+            padding: 12px 40px;
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: 16px;
+            background-color: $yellow;
+            color: #fff;
+            border-radius: 8px;
+            gap: 12px;
+            cursor: pointer;
+    }
+}
+.card__art {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    margin-top: 64px;
+    .card__art-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        gap: 24px;
+        background: #131E3A;
+        border-top: 5px solid #D6EF0E;
+        border-radius: 28px;
+        .card__art-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 16px;
+            .card__art-info-tittle {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 50px;
+                color: #fff;
+                h2 {
+                    font-weight: 700;
+                    font-size: 24px;
+                }
+            }
+            .card__art__info-desc {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0;
+                gap: 93px;
+                .card__art__info-left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 4px;
+                    h6 {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #838382;
+                        font-family: 'Inter';
+                    }
+                    p {
+                        font-family: 'Inter';
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+                .card__art__info-right-btn {
+
+                    .card__art__btn-first {
+                        border: 1px solid $yellow;
+                        border-radius: 8px;
+                        padding: 12px 40px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        font-family: 'Inter';
+                        color: $yellow;
+                        background-color: transparent;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+.card__art__btn-first {
+    border: 1px solid $yellow;
+    border-radius: 8px;
+    padding: 12px 40px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Inter';
+    color: $yellow;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.bestNFT {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 92px 111px;
+}
+.BNFT__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    width: 426px;
+    margin-top: 230px;
+    .BNFT__tittle {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 57px;
+}
+    .BNFT__desc {
+        font-weight: 400;
+        font-size: 16px;
+        p {
+        font-family: 'Inter';
+        }
+}
+    .BNFT__btns {
+
+        .BNFT__button__first {
+            border: none;
+            outline: none;
+            padding: 12px 40px;
+            font-family: 'Inter';
+            background-color: $bgyellow;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .BNFT__button__second {
+            border: none;
+            outline: none;
+            padding: 12px 20px;
+            font-family: 'Inter';
+            background-color: transparent;
+            color: #000;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
+.BNFT__right {
+    height: 560px;
+    margin-top: 92px;
+    margin-bottom: 72px;
+    position: relative;
+    .img__BNFT_First {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .img__BNFT_Second {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+}
