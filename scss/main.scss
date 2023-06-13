@@ -43,6 +43,8 @@
         outline: none;
         padding: 12px 40px;
         font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 700;
         background-color: $bgyellow;
         color: #fff;
         border-radius: 8px;
@@ -83,6 +85,8 @@
             outline: none;
             padding: 12px 40px;
             font-family: 'Inter';
+            font-size: 16px;
+            font-weight: 700;
             background-color: $bgyellow;
             color: #fff;
             border-radius: 8px;
@@ -92,6 +96,8 @@
             border: none;
             outline: none;
             padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 700;
             font-family: 'Inter';
             background-color: transparent;
             color: #000;
@@ -365,6 +371,8 @@
             outline: none;
             padding: 12px 40px;
             font-family: 'Inter';
+            font-size: 16px;
+            font-weight: 700;
             background-color: $bgyellow;
             color: #fff;
             border-radius: 8px;
@@ -397,5 +405,31 @@
         position: absolute;
         right: 0;
         z-index: -1;
+    }
+}
+
+
+.headerArtist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .headerArtist__tittle {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 57px;
+    }
+    .headerArtist__btn {
+        border: none;
+        outline: none;
+        padding: 12px 40px;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 700;
+        background-color: $bgyellow;
+        color: #fff;
+        border-radius: 8px;
+        gap: 12px;
+        cursor: pointer;
     }
 }
