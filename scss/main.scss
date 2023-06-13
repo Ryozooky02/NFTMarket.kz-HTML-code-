@@ -433,3 +433,103 @@
         cursor: pointer;
     }
 }
+
+
+
+
+.introArtistBlock {
+    display: flex;
+    align-items: flex-start;
+    .introArtistLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        .introArtistUP {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 30px;
+            .introArtistUP__content {
+
+                .imgUP {
+                    width: 300px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    position: relative;
+                    .introArtistUP__profile {
+                        height: 45px;
+                        display: flex;
+                        position: absolute;
+                        left: 24px;
+                        top: 75%;
+                        z-index: 1000;
+                        .introArtistUP__logo {
+                            padding-right: 12px;
+                        }
+                        .introArtistUP__info {
+                            .introArtistUP__infro__tittle {
+                                h5 {
+                                    color: #fff;
+                                    font-family: 'Inter';
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                }
+                                
+                            }
+                            .introArtistUP__infro__desc {
+                                h4 {
+                                    color: #fff;
+                                    font-family: 'Inter';
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .introArtistDown {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 30px;
+            .introArtistDown__content {
+
+                .imgDown {
+                    position: relative;
+                    .introArtistDown__profile {
+                        height: 45px;
+                        display: flex;
+                        position: absolute;
+                        left: 24px;
+                        top: 75%;
+                        z-index: 1000;
+                        .introArtistDown__logo {
+                            padding-right: 12px;
+                        }
+                        .introArtistDown__infro__tittle {
+                            h5 {
+                                color: #fff;
+                                font-family: 'Inter';
+                                font-weight: 400;
+                                font-size: 14px;
+                            }
+                        }
+                        .introArtistDown__infro__desc {
+                            h4 {
+                                color: #fff;
+                                font-family: 'Inter';
+                                font-weight: 700;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
