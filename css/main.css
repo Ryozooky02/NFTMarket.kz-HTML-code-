@@ -350,12 +350,12 @@
   align-items: flex-start;
   gap: 40px;
   width: 426px;
-  margin-top: 230px;
+  margin-top: 170px;
 }
 .BNFT__left .BNFT__tittle {
   font-weight: 500;
   font-size: 48px;
-  line-height: 57px;
+  line-height: 76.8px;
 }
 .BNFT__left .BNFT__desc {
   font-weight: 400;
@@ -409,11 +409,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 64px;
 }
 .headerArtist .headerArtist__tittle {
   font-weight: 500;
   font-size: 48px;
-  line-height: 57px;
+  line-height: 76.8px;
+}
+.headerArtist .headerArtist__tittle .headerArtist__tittle-span {
+  color: #D6EF0E;
 }
 .headerArtist .headerArtist__btn {
   border: none;
@@ -456,6 +460,7 @@
 .introArtistBlock .introArtistLeft .introArtistUP .introArtistUP__content .imgUP .introArtistUP__profile {
   height: 45px;
   display: flex;
+  align-items: center;
   position: absolute;
   left: 24px;
   top: 75%;
@@ -488,6 +493,7 @@
 .introArtistBlock .introArtistLeft .introArtistDown .introArtistDown__content .imgDown .introArtistDown__profile {
   height: 45px;
   display: flex;
+  align-items: center;
   position: absolute;
   left: 24px;
   top: 75%;
@@ -503,6 +509,39 @@
   font-size: 14px;
 }
 .introArtistBlock .introArtistLeft .introArtistDown .introArtistDown__content .imgDown .introArtistDown__profile .introArtistDown__infro__desc h4 {
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.introArtistRight__content .imgRight {
+  position: relative;
+}
+.introArtistRight__content .imgRight .ImgRight {
+  width: 416px;
+  height: 652px;
+  background: linear-gradient(2.23deg, rgba(19, 30, 58, 0.92) 16.36%, rgba(19, 30, 58, 0) 52.73%);
+}
+.introArtistRight__content .imgRight .introArtistRight__profile {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 24px;
+  top: 88%;
+  z-index: 1000;
+}
+.introArtistRight__content .imgRight .introArtistRight__profile .introArtistRight__logo {
+  padding-right: 12px;
+}
+.introArtistRight__content .imgRight .introArtistRight__profile .introArtistRight__infro__tittle h5 {
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+}
+.introArtistRight__content .imgRight .introArtistRight__profile .introArtistRight__infro__desc h4 {
   color: #fff;
   font-family: "Inter";
   font-weight: 700;

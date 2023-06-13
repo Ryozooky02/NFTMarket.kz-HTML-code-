@@ -351,11 +351,11 @@
     align-items: flex-start;
     gap: 40px;
     width: 426px;
-    margin-top: 230px;
+    margin-top: 170px;
     .BNFT__tittle {
         font-weight: 500;
         font-size: 48px;
-        line-height: 57px;
+        line-height: 76.8px;
 }
     .BNFT__desc {
         font-weight: 400;
@@ -414,10 +414,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 64px;
     .headerArtist__tittle {
         font-weight: 500;
         font-size: 48px;
-        line-height: 57px;
+        line-height: 76.8px;
+        .headerArtist__tittle-span {
+            color: $yellow;
+        }
     }
     .headerArtist__btn {
         border: none;
@@ -462,6 +466,7 @@
                     .introArtistUP__profile {
                         height: 45px;
                         display: flex;
+                        align-items: center;
                         position: absolute;
                         left: 24px;
                         top: 75%;
@@ -504,6 +509,7 @@
                     .introArtistDown__profile {
                         height: 45px;
                         display: flex;
+                        align-items: center;
                         position: absolute;
                         left: 24px;
                         top: 75%;
@@ -528,6 +534,44 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+.introArtistRight__content {
+    .imgRight {
+        .ImgRight {
+            width: 416px;
+            height: 652px;
+            background: linear-gradient(2.23deg, rgba(19, 30, 58, 0.92) 16.36%, rgba(19, 30, 58, 0) 52.73%)
+        }
+        position: relative;
+        .introArtistRight__profile {
+            height: 45px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 24px;
+            top: 88%;
+            z-index: 1000;
+            .introArtistRight__logo {
+                padding-right: 12px;
+            } 
+            .introArtistRight__infro__tittle {
+                h5 {
+                    color: #fff;
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+            .introArtistRight__infro__desc {
+                h4 {
+                    color: #fff;
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    font-size: 16px;
                 }
             }
         }
