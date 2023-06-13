@@ -7,3 +7,12 @@
     font-family: 'Canela Condensed Trial', sans-serif;
     font-family: 'Canela Deck Trial', sans-serif;
 }
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #1a2652, #261d3f, #26162e, #21111f, #190a13, #180e15, #171116, #161317, #1b1d25, #1b2932, #19353b, #1f413d);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: opacity($color: black);
+}

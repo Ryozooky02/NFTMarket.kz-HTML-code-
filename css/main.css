@@ -10,6 +10,16 @@
   font-family: "Canela Deck Trial", sans-serif;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #1a2652, #261d3f, #26162e, #21111f, #190a13, #180e15, #171116, #161317, #1b1d25, #1b2932, #19353b, #1f413d);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: 1;
+}
+
 .header {
   height: 104px;
   display: flex;
@@ -36,9 +46,13 @@
 .menu .menu__list .menu__item .menu__link {
   text-decoration: none;
   color: #808080;
+  transition: 0.3s ease;
+}
+.menu .menu__list .menu__item .menu__link:hover {
+  color: #D6EF0E;
 }
 .menu .menu__list .menu__item .menu__link_active {
-  color: black;
+  color: #D6EF0E;
 }
 
 .btn {
@@ -54,9 +68,13 @@
   font-size: 16px;
   font-weight: 700;
   background-color: #D6EF0E;
-  color: #fff;
+  color: #000;
   border-radius: 8px;
+  transition: 0.5s ease;
   cursor: pointer;
+}
+.btn .btn__primary:hover {
+  background-color: #fff;
 }
 
 .intro-left {
@@ -64,10 +82,14 @@
   padding: 0;
 }
 .intro-left .intro__tittle {
+  width: 500px;
+}
+.intro-left .intro__tittle h1 {
   font-weight: 500;
   font-size: 55px;
   line-height: 76.8px;
   margin-bottom: 40px;
+  color: #fff;
 }
 .intro-left .intro__tittle .intro__tittle-span {
   color: #D6EF0E;
@@ -79,6 +101,7 @@
   font-size: 16px;
   margin-bottom: 40px;
   line-height: 25px;
+  color: #fff;
 }
 .intro-left .intro__text p {
   font-family: "Inter";
@@ -94,9 +117,13 @@
   font-size: 16px;
   font-weight: 700;
   background-color: #D6EF0E;
-  color: #fff;
+  color: #000;
   border-radius: 8px;
+  transition: 0.5s ease;
   cursor: pointer;
+}
+.intro-left .intro__btns .intro__btns-first:hover {
+  background-color: #fff;
 }
 .intro-left .intro__btns .intro__btns-second {
   border: none;
@@ -106,7 +133,7 @@
   font-weight: 700;
   font-family: "Inter";
   background-color: transparent;
-  color: #000;
+  color: #fff;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -124,12 +151,13 @@
 .intro__stats .intro__stats-item h2 {
   font-weight: 500;
   font-size: 48px;
-  color: #000;
+  color: #fff;
 }
 .intro__stats .intro__stats-item p {
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
+  color: #fff;
 }
 .intro__stats .intro__stats-item .intro__stats-span {
   color: #D6EF0E;
@@ -144,6 +172,7 @@
   justify-content: center;
   margin-top: 92px;
   position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .intro-right .intro__card {
   width: 304px;
@@ -157,6 +186,7 @@
   border-top: 5px solid #D6EF0E;
   box-shadow: 0px 9px 50px rgba(23, 36, 65, 0.04);
   border-radius: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   position: absolute;
   top: 85%;
   right: 0;
@@ -228,6 +258,7 @@
   font-weight: 500;
   font-size: 48px;
   line-height: 57px;
+  color: #fff;
 }
 .headerArt .headerArt__tittle .headerArt__tittle-span {
   color: #D6EF0E;
@@ -240,7 +271,7 @@
   font-weight: 700;
   font-size: 16px;
   background-color: #D6EF0E;
-  color: #fff;
+  color: #000;
   border-radius: 8px;
   gap: 12px;
   cursor: pointer;
@@ -252,6 +283,7 @@
   align-items: center;
   gap: 35px;
   margin-top: 64px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .card__art .card__art-block {
   display: flex;
@@ -352,10 +384,14 @@
   width: 426px;
   margin-top: 170px;
 }
-.BNFT__left .BNFT__tittle {
+.BNFT__left .BNFT__tittle .BNFT__tittle-span {
+  color: #D6EF0E;
+}
+.BNFT__left .BNFT__tittle h2 {
   font-weight: 500;
   font-size: 48px;
   line-height: 76.8px;
+  color: #fff;
 }
 .BNFT__left .BNFT__desc {
   font-weight: 400;
@@ -363,6 +399,10 @@
 }
 .BNFT__left .BNFT__desc p {
   font-family: "Inter";
+  color: #fff;
+}
+.BNFT__left .BNFT__btns {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .BNFT__left .BNFT__btns .BNFT__button__first {
   border: none;
@@ -372,9 +412,13 @@
   font-size: 16px;
   font-weight: 700;
   background-color: #D6EF0E;
-  color: #fff;
+  color: #000;
   border-radius: 8px;
+  transition: 0.5s ease;
   cursor: pointer;
+}
+.BNFT__left .BNFT__btns .BNFT__button__first:hover {
+  background-color: #fff;
 }
 .BNFT__left .BNFT__btns .BNFT__button__second {
   border: none;
@@ -382,7 +426,7 @@
   padding: 12px 20px;
   font-family: "Inter";
   background-color: transparent;
-  color: #000;
+  color: #fff;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -392,6 +436,7 @@
   margin-top: 92px;
   margin-bottom: 72px;
   position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .BNFT__right .img__BNFT_First {
   position: absolute;
@@ -411,10 +456,11 @@
   align-items: center;
   margin-bottom: 64px;
 }
-.headerArtist .headerArtist__tittle {
+.headerArtist .headerArtist__tittle h2 {
   font-weight: 500;
   font-size: 48px;
   line-height: 76.8px;
+  color: #fff;
 }
 .headerArtist .headerArtist__tittle .headerArtist__tittle-span {
   color: #D6EF0E;
@@ -427,15 +473,20 @@
   font-size: 16px;
   font-weight: 700;
   background-color: #D6EF0E;
-  color: #fff;
+  color: #000;
   border-radius: 8px;
   gap: 12px;
+  transition: 0.5s ease;
   cursor: pointer;
+}
+.headerArtist .headerArtist__btn:hover {
+  background-color: #fff;
 }
 
 .introArtistBlock {
   display: flex;
   align-items: flex-start;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .introArtistBlock .introArtistLeft {
   display: flex;
@@ -468,6 +519,7 @@
 }
 .introArtistBlock .introArtistLeft .introArtistUP .introArtistUP__content .imgUP .introArtistUP__profile .introArtistUP__logo {
   padding-right: 12px;
+  cursor: pointer;
 }
 .introArtistBlock .introArtistLeft .introArtistUP .introArtistUP__content .imgUP .introArtistUP__profile .introArtistUP__info .introArtistUP__infro__tittle h5 {
   color: #fff;
@@ -501,6 +553,7 @@
 }
 .introArtistBlock .introArtistLeft .introArtistDown .introArtistDown__content .imgDown .introArtistDown__profile .introArtistDown__logo {
   padding-right: 12px;
+  cursor: pointer;
 }
 .introArtistBlock .introArtistLeft .introArtistDown .introArtistDown__content .imgDown .introArtistDown__profile .introArtistDown__infro__tittle h5 {
   color: #fff;
@@ -515,6 +568,9 @@
   font-size: 16px;
 }
 
+.introArtistRight__content {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .introArtistRight__content .imgRight {
   position: relative;
 }
@@ -522,6 +578,7 @@
   width: 416px;
   height: 652px;
   background: linear-gradient(2.23deg, rgba(19, 30, 58, 0.92) 16.36%, rgba(19, 30, 58, 0) 52.73%);
+  border-radius: 16px;
 }
 .introArtistRight__content .imgRight .introArtistRight__profile {
   height: 45px;
@@ -534,6 +591,7 @@
 }
 .introArtistRight__content .imgRight .introArtistRight__profile .introArtistRight__logo {
   padding-right: 12px;
+  cursor: pointer;
 }
 .introArtistRight__content .imgRight .introArtistRight__profile .introArtistRight__infro__tittle h5 {
   color: #fff;
@@ -546,4 +604,167 @@
   font-family: "Inter";
   font-weight: 700;
   font-size: 16px;
+}
+
+.ImgBlock {
+  width: 600px;
+  margin-top: 180px;
+  margin-left: 26px;
+}
+.ImgBlock .LeftContentImgs {
+  height: 420px;
+  position: relative;
+}
+.ImgBlock .LeftContentImgs .Left__FirstImg {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  transform: rotate(-11.19deg);
+}
+.ImgBlock .LeftContentImgs .Left__SecondImg {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.EmailBlock {
+  margin-top: 177px;
+}
+.EmailBlock .EmailRightContent {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  margin-left: 124px;
+  gap: 40px;
+}
+.EmailBlock .EmailRightContent .EmailRight__tittle h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 76.8px;
+  color: #fff;
+}
+.EmailBlock .EmailRightContent .EmailRight__tittle .EmailRight__tittle-span {
+  color: #D6EF0E;
+}
+.EmailBlock .EmailRightContent .EmailRight__desc p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+  color: #fff;
+}
+.EmailBlock .EmailRightContent .EmailRight__InputBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.EmailBlock .EmailRightContent .EmailRight__InputBtn .EmailRight__input {
+  width: 516px;
+  border: none;
+  outline: none;
+  padding: 16px 24px;
+  background: #131E3A;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+  color: rgba(255, 255, 253, 0.72);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.EmailBlock .EmailRightContent .EmailRight__InputBtn .EmailRight__button {
+  border: none;
+  outline: none;
+  padding: 12px 40px;
+  background: #D6EF0E;
+  border-radius: 8px;
+  color: #000;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  position: absolute;
+  right: 4px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.EmailBlock .EmailRightContent .EmailRight__InputBtn .EmailRight__button:hover {
+  background-color: #fff;
+}
+
+.footer {
+  margin-top: 180px;
+}
+
+.FooterLeftBlock {
+  border-bottom: 1px solid #838382;
+}
+.FooterLeftBlock .FooterLeftBlock__tittle {
+  width: 270px;
+}
+.FooterLeftBlock .FooterLeftBlock__tittle p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFD;
+}
+.FooterLeftBlock .FooterLeftBlock__icons .FoterLeftBlock__list {
+  display: flex;
+  margin-top: 24px;
+  gap: 15px;
+}
+.FooterLeftBlock .FooterLeftBlock__icons .FoterLeftBlock__list .FoterLeftBlock__item {
+  font-size: 30px;
+  list-style-type: none;
+  color: black;
+}
+.FooterLeftBlock .FooterLeftBlock__icons .FoterLeftBlock__list .FoterLeftBlock__item .FoterLeftBlock__item--active {
+  background-color: #D6EF0E;
+}
+.FooterLeftBlock .FooterLeftBlock__icons .FoterLeftBlock__list .FoterLeftBlock__item .FoterLeftBlock__link {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.FooterLeftBlock .FooterLeftBlock__icons .FoterLeftBlock__list .FoterLeftBlock__item .FoterLeftBlock__link_active {
+  color: #D6EF0E;
+}
+
+.FooterRightBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.FooterCopy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.FooterCopy .FooterCopy__tittle-left h4 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFD;
+}
+.FooterCopy .FooterCopy__tittle-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.FooterCopy .FooterCopy__tittle-right .FooterCopy__tittle__Privacy h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFD;
+}
+.FooterCopy .FooterCopy__tittle-right .FooterCopy__tittle__Terms h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFD;
 }

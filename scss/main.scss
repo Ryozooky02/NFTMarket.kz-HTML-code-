@@ -26,10 +26,13 @@
             .menu__link {
                 text-decoration: none;
                 color: #808080;
-                
+                transition: .3s ease;
+                &:hover {
+                    color: #D6EF0E;
+                }
             }
             .menu__link_active {
-                color: black;
+                color: $yellow;
             }
         }
     }
@@ -46,9 +49,13 @@
         font-size: 16px;
         font-weight: 700;
         background-color: $bgyellow;
-        color: #fff;
+        color: #000;
         border-radius: 8px;
+        transition: .5s ease;
         cursor: pointer;
+        &:hover {
+            background-color: #fff;
+        }
     }
 }
 
@@ -58,11 +65,14 @@
     margin-top: 118px;
     padding: 0;
     .intro__tittle {
+        width: 500px;
+       h1 {
         font-weight: 500;
         font-size: 55px;
         line-height: 76.8px;
         margin-bottom: 40px;
-
+        color: #fff;
+       }
         .intro__tittle-span {
             color: $yellow;
         }
@@ -74,6 +84,7 @@
         font-size: 16px;
         margin-bottom: 40px;
         line-height: 25px;
+        color: #fff;
         p {
             font-family: 'Inter';
         }
@@ -88,9 +99,13 @@
             font-size: 16px;
             font-weight: 700;
             background-color: $bgyellow;
-            color: #fff;
+            color: #000;
             border-radius: 8px;
+            transition: .5s ease;
             cursor: pointer;
+            &:hover {
+                background-color: #fff;
+            }
         }
         .intro__btns-second {
             border: none;
@@ -100,7 +115,7 @@
             font-weight: 700;
             font-family: 'Inter';
             background-color: transparent;
-            color: #000;
+            color: #fff;
             border-radius: 8px;
             cursor: pointer;
         }
@@ -118,12 +133,13 @@
         h2 {
             font-weight: 500;
             font-size: 48px;
-            color: #000;
+            color: #fff;
         }
         p {
             font-family: 'Inter';
             font-weight: 400;
             font-size: 16px;
+            color: #fff;
         }
         .intro__stats-span {
             color: $yellow;
@@ -142,6 +158,7 @@
     justify-content: center;
     margin-top: 92px;
     position: relative;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     .intro__card {
         width: 304px;
         height: 169px;
@@ -154,6 +171,7 @@
         border-top: 5px solid #D6EF0E;
         box-shadow: 0px 9px 50px rgba(23, 36, 65, 0.04);
         border-radius: 16px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         position: absolute;
         top: 85%;
         right: 0;
@@ -227,6 +245,7 @@
             font-weight: 500;
             font-size: 48px;
             line-height: 57px;
+            color: #fff;
         }
         .headerArt__tittle-span {
             color: $yellow;
@@ -240,7 +259,7 @@
             font-weight: 700;
             font-size: 16px;
             background-color: $yellow;
-            color: #fff;
+            color: #000;
             border-radius: 8px;
             gap: 12px;
             cursor: pointer;
@@ -252,6 +271,7 @@
     align-items: center;
     gap: 35px;
     margin-top: 64px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     .card__art-block {
         display: flex;
         flex-direction: column;
@@ -353,19 +373,27 @@
     width: 426px;
     margin-top: 170px;
     .BNFT__tittle {
-        font-weight: 500;
-        font-size: 48px;
-        line-height: 76.8px;
+
+        .BNFT__tittle-span {
+            color: $yellow;
+        }
+        h2 {
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 76.8px;
+            color: #fff;
+        }
 }
     .BNFT__desc {
         font-weight: 400;
         font-size: 16px;
         p {
         font-family: 'Inter';
+        color: #fff;
         }
 }
     .BNFT__btns {
-
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         .BNFT__button__first {
             border: none;
             outline: none;
@@ -374,9 +402,13 @@
             font-size: 16px;
             font-weight: 700;
             background-color: $bgyellow;
-            color: #fff;
+            color: #000;
             border-radius: 8px;
+            transition: .5s ease;
             cursor: pointer;
+            &:hover {
+                background-color: #fff;
+            }
         }
 
         .BNFT__button__second {
@@ -385,7 +417,7 @@
             padding: 12px 20px;
             font-family: 'Inter';
             background-color: transparent;
-            color: #000;
+            color: #fff;
             border-radius: 8px;
             cursor: pointer;
         }
@@ -396,6 +428,7 @@
     margin-top: 92px;
     margin-bottom: 72px;
     position: relative;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     .img__BNFT_First {
         position: absolute;
         left: 0;
@@ -416,9 +449,12 @@
     align-items: center;
     margin-bottom: 64px;
     .headerArtist__tittle {
-        font-weight: 500;
+        h2 {
+            font-weight: 500;
         font-size: 48px;
         line-height: 76.8px;
+        color: #fff;
+        }
         .headerArtist__tittle-span {
             color: $yellow;
         }
@@ -431,10 +467,14 @@
         font-size: 16px;
         font-weight: 700;
         background-color: $bgyellow;
-        color: #fff;
+        color: #000;
         border-radius: 8px;
         gap: 12px;
-        cursor: pointer;
+        transition: .5s ease;
+            cursor: pointer;
+            &:hover {
+                background-color: #fff;
+            }
     }
 }
 
@@ -444,6 +484,7 @@
 .introArtistBlock {
     display: flex;
     align-items: flex-start;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     .introArtistLeft {
         display: flex;
         flex-direction: column;
@@ -473,6 +514,7 @@
                         z-index: 1000;
                         .introArtistUP__logo {
                             padding-right: 12px;
+                            cursor: pointer;
                         }
                         .introArtistUP__info {
                             .introArtistUP__infro__tittle {
@@ -516,6 +558,7 @@
                         z-index: 1000;
                         .introArtistDown__logo {
                             padding-right: 12px;
+                            cursor: pointer;
                         }
                         .introArtistDown__infro__tittle {
                             h5 {
@@ -540,11 +583,14 @@
     }
 }
 .introArtistRight__content {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     .imgRight {
         .ImgRight {
             width: 416px;
             height: 652px;
-            background: linear-gradient(2.23deg, rgba(19, 30, 58, 0.92) 16.36%, rgba(19, 30, 58, 0) 52.73%)
+            background: linear-gradient(2.23deg, rgba(19, 30, 58, 0.92) 16.36%, rgba(19, 30, 58, 0) 52.73%);
+            border-radius: 16px;
+            
         }
         position: relative;
         .introArtistRight__profile {
@@ -557,6 +603,7 @@
             z-index: 1000;
             .introArtistRight__logo {
                 padding-right: 12px;
+                cursor: pointer;
             } 
             .introArtistRight__infro__tittle {
                 h5 {
@@ -573,6 +620,191 @@
                     font-weight: 700;
                     font-size: 16px;
                 }
+            }
+        }
+    }
+}
+.ImgBlock {
+    width: 600px;
+    margin-top: 180px;
+    margin-left: 26px;
+    .LeftContentImgs {
+        height: 420px;
+        position: relative;
+        .Left__FirstImg {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 20px;
+            transform: rotate(-11.19deg);
+        }
+        .Left__SecondImg{
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 20px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+.EmailBlock {
+    margin-top: 177px;
+    .EmailRightContent {
+        width: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        margin-left: 124px;
+        gap: 40px;
+        .EmailRight__tittle {
+            h2 {
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 76.8px;
+                color: #fff;
+            }
+            .EmailRight__tittle-span {
+                color: $yellow;
+            }
+        }
+        .EmailRight__desc {
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                font-family: 'Inter';
+                color: #fff;
+            }
+        }
+        .EmailRight__InputBtn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            .EmailRight__input {
+                width: 516px;
+                border: none;
+                outline: none;
+                padding: 16px 24px;
+                background: #131E3A;
+                border-radius: 8px;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: 'Inter';
+                color: rgba(255, 255, 253, 0.72);
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+            .EmailRight__button {
+                border: none;
+                outline: none;
+                padding: 12px 40px;
+                background: $yellow;
+                border-radius: 8px;
+                color: #000;
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: 16px;
+                position: absolute;
+                right: 4px;
+                transition: .5s ease;
+                cursor: pointer;
+                &:hover {
+                    background-color: #fff;
+            }
+            }
+        }
+    }
+}
+.footer {
+    margin-top: 180px;
+}
+.FooterLeftBlock {
+    border-bottom: 1px solid #838382;
+    .FooterLeftBlock__tittle {
+        width: 270px;
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFD;
+        }
+    }
+    .FooterLeftBlock__icons {
+        
+        .FoterLeftBlock__list {
+            display: flex;
+            margin-top: 24px;
+            gap: 15px;
+            .FoterLeftBlock__item {
+                font-size: 30px;
+                list-style-type: none;
+                color: black;
+                .FoterLeftBlock__item--active {
+                    background-color: $yellow;
+                }
+                .FoterLeftBlock__link {
+                    color: #fff;
+                    text-decoration: none;
+                    border-radius: 15px;
+                }
+                .FoterLeftBlock__link_active {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
+
+
+
+.FooterRightBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.FooterCopy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .FooterCopy__tittle-left {
+       h4 {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFD;
+       }
+    }
+    .FooterCopy__tittle-right {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        .FooterCopy__tittle__Privacy {
+            h4 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #FFFFFD;
+            }
+        }
+        .FooterCopy__tittle__Terms {
+            h4 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #FFFFFD;
             }
         }
     }
