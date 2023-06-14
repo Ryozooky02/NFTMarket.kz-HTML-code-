@@ -262,7 +262,11 @@
             color: #000;
             border-radius: 8px;
             gap: 12px;
+            transition: .5s ease;
             cursor: pointer;
+            &:hover {
+            background-color: #fff;
+        }
     }
 }
 .card__art {
@@ -471,10 +475,10 @@
         border-radius: 8px;
         gap: 12px;
         transition: .5s ease;
-            cursor: pointer;
-            &:hover {
-                background-color: #fff;
-            }
+        cursor: pointer;
+        &:hover {
+            background-color: #fff;
+        }
     }
 }
 
@@ -713,11 +717,20 @@
         }
     }
 }
+.footerGeneralAll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 48px;
+    border-bottom: 2px solid #838382;
+    margin-bottom: 48px;
+}
 .footer {
+    background: #000;
     margin-top: 180px;
+    padding-top: 125px;
 }
 .FooterLeftBlock {
-    border-bottom: 1px solid #838382;
     .FooterLeftBlock__tittle {
         width: 270px;
         p {
@@ -725,6 +738,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
+            line-height: 26px;
             color: #FFFFFD;
         }
     }
@@ -760,23 +774,157 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    .FooterExplore {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        .Footer__tittle {
+            h5 {
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+        .Footer__desc {
+
+            .Footer__list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 8px;
+                .Footer__item {
+                    list-style-type: none;
+                    .Footer__link {
+                        font-family: 'Inter';
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-decoration: none;
+                        color: #FFFFFD;
+                    }
+                }
+            }
+        }
+    }
+    .FooterStatistic {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        .Footer__tittle {
+            h5 {
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+        .Footer__desc {
+
+            .Footer__list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 8px;
+                .Footer__item {
+                    list-style-type: none;
+                    .Footer__link {
+                        font-family: 'Inter';
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-decoration: none;
+                        color: #FFFFFD;
+                    }
+                }
+            }
+        }
+    }
+    .FooterCompany {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        .Footer__tittle {
+            h5 {
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+        .Footer__desc {
+
+            .Footer__list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 8px;
+                .Footer__item {
+                    list-style-type: none;
+                    .Footer__link {
+                        font-family: 'Inter';
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-decoration: none;
+                        color: #FFFFFD;
+                    }
+                }
+            }
+        }
+    }
+    .FooterResources {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        .Footer__tittle {
+            h5 {
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+        .Footer__desc {
+
+            .Footer__list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 8px;
+                .Footer__item {
+                    list-style-type: none;
+                    .Footer__link {
+                        font-family: 'Inter';
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-decoration: none;
+                        color: #FFFFFD;
+                    }
+                }
+            }
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.FooterSecondLevel {
+    background-color: #000;
+}
 .FooterCopy {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 92px;
     .FooterCopy__tittle-left {
        h4 {
         font-family: 'Inter';

@@ -274,7 +274,11 @@ body {
   color: #000;
   border-radius: 8px;
   gap: 12px;
+  transition: 0.5s ease;
   cursor: pointer;
+}
+.headerArt .btn__header__art:hover {
+  background-color: #fff;
 }
 
 .card__art {
@@ -693,13 +697,21 @@ body {
   background-color: #fff;
 }
 
-.footer {
-  margin-top: 180px;
+.footerGeneralAll {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 48px;
+  border-bottom: 2px solid #838382;
+  margin-bottom: 48px;
 }
 
-.FooterLeftBlock {
-  border-bottom: 1px solid #838382;
+.footer {
+  background: #000;
+  margin-top: 180px;
+  padding-top: 125px;
 }
+
 .FooterLeftBlock .FooterLeftBlock__tittle {
   width: 270px;
 }
@@ -708,6 +720,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
   color: #FFFFFD;
 }
 .FooterLeftBlock .FooterLeftBlock__icons .FoterLeftBlock__list {
@@ -737,11 +750,138 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+.FooterRightBlock .FooterExplore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+.FooterRightBlock .FooterExplore .Footer__tittle h5 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+.FooterRightBlock .FooterExplore .Footer__desc .Footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.FooterRightBlock .FooterExplore .Footer__desc .Footer__list .Footer__item {
+  list-style-type: none;
+}
+.FooterRightBlock .FooterExplore .Footer__desc .Footer__list .Footer__item .Footer__link {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: #FFFFFD;
+}
+.FooterRightBlock .FooterStatistic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+.FooterRightBlock .FooterStatistic .Footer__tittle h5 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+.FooterRightBlock .FooterStatistic .Footer__desc .Footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.FooterRightBlock .FooterStatistic .Footer__desc .Footer__list .Footer__item {
+  list-style-type: none;
+}
+.FooterRightBlock .FooterStatistic .Footer__desc .Footer__list .Footer__item .Footer__link {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: #FFFFFD;
+}
+.FooterRightBlock .FooterCompany {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+.FooterRightBlock .FooterCompany .Footer__tittle h5 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+.FooterRightBlock .FooterCompany .Footer__desc .Footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.FooterRightBlock .FooterCompany .Footer__desc .Footer__list .Footer__item {
+  list-style-type: none;
+}
+.FooterRightBlock .FooterCompany .Footer__desc .Footer__list .Footer__item .Footer__link {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: #FFFFFD;
+}
+.FooterRightBlock .FooterResources {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+.FooterRightBlock .FooterResources .Footer__tittle h5 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+.FooterRightBlock .FooterResources .Footer__desc .Footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.FooterRightBlock .FooterResources .Footer__desc .Footer__list .Footer__item {
+  list-style-type: none;
+}
+.FooterRightBlock .FooterResources .Footer__desc .Footer__list .Footer__item .Footer__link {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: #FFFFFD;
+}
+
+.FooterSecondLevel {
+  background-color: #000;
+}
 
 .FooterCopy {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 92px;
 }
 .FooterCopy .FooterCopy__tittle-left h4 {
   font-family: "Inter";
